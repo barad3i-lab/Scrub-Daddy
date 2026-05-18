@@ -137,7 +137,7 @@ function onAnchorClick(e) { e.preventDefault(); const target = document.querySel
 
 /* ---------------------- Bundle ---------------------- */
 function onBundleAdd(e) {
-  const bundle = { id: 100, name: 'Best Seller Bundle', price: 700, image: 'images/bundle.jpeg' };
+  const bundle = { id: 100, name: 'Best Seller Bundle', price: 700, image: 'bundle.jpeg' };
   addToCart(bundle, 1, e.currentTarget);
   const btn = e.currentTarget; const prev = btn.textContent; btn.textContent = 'Added!'; btn.disabled = true; setTimeout(() => { btn.textContent = prev; btn.disabled = false; }, 1100);
 }
