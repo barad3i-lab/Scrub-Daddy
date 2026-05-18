@@ -1085,3 +1085,32 @@ a {
 .product-actions {
     margin-top: auto;
 }
+.products-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+    align-items:stretch;
+}
+
+.product-card{
+    display:flex !important;
+    flex-direction:column !important;
+    justify-content:space-between !important;
+    height:750px !important;
+}
+
+.product-image img{
+    width:100%;
+    height:300px !important;
+    object-fit:cover !important;
+}
+
+.product-info{
+    display:flex !important;
+    flex-direction:column !important;
+    flex:1 !important;
+}
+
+.product-actions{
+    margin-top:auto !important;
+}
