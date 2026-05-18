@@ -390,6 +390,21 @@ a {
     overflow: hidden;
     border-radius: 32px;
 }
+.product-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.product-actions {
+    margin-top: auto;
+}
 
 .bundle-image {
     position: relative;
