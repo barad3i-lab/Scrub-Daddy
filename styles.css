@@ -1060,9 +1060,12 @@ a {
 }
 
 .product-card {
+    background: #fff;
+    border-radius: 30px;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
-    height: 100%;
+    height: 750px;
 }
 
 .product-image img {
@@ -1072,9 +1075,11 @@ a {
 }
 
 .product-info {
-    flex: 1;
+    padding: 40px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
 }
 
 .product-actions {
