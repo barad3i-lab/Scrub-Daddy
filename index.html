@@ -1,0 +1,256 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrub Daddy - Cleaning Made Smarter</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preload" as="image" href="images/bestseller.jpg">
+    <link rel="icon" type="image/png" href="images/icon.png">
+    <link rel="apple-touch-icon" href="images/icon.png">
+    <meta name="theme-color" content="#0066ff">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container container">
+            <div class="nav-logo">
+                <h1>Scrub Daddy</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a class="nav-link" href="#home">Home</a></li>
+                <li><a class="nav-link" href="#products">Products</a></li>
+                <li><a class="nav-link" href="#features">Features</a></li>
+                <li><a class="nav-link" href="#checkout">Checkout</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="cart-toggle" id="cartToggle" aria-label="Open cart">
+                    <span class="cart-icon">🛒</span>
+                    <span class="cart-count" id="cartCount">0</span>
+                </button>
+                <button class="hamburger" id="mobileMenuToggle" aria-label="Open menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <aside class="cart-sidebar" id="cartSidebar" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Shopping cart" tabindex="-1">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button class="cart-close" id="cartClose" aria-label="Close cart">×</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <p>Your cart is empty</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total</span>
+                <span id="totalPrice">0 EGP</span>
+            </div>
+            <a class="btn btn-primary checkout-btn" href="#checkout">Proceed to Checkout</a>
+        </div>
+    </aside>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <p class="eyebrow">Smart Cleaning</p>
+                    <h2>Clean smarter with the world's most responsive sponge.</h2>
+                    <p>Scrub Daddy changes texture from firm to soft with water temperature, giving you powerful cleaning and gentle care in one tool.</p>
+                    <a class="btn btn-primary btn-large" href="#products">Shop Now</a>
+                </div>
+                <div class="hero-visual">
+                    <div class="hero-card">
+                        <div class="hero-label">Best Seller</div>
+                        <div class="hero-image">
+                            <img src="images/bestseller.jpg" alt="Best Seller - Scrub Daddy" class="hero-shot" loading="eager" decoding="async" fetchpriority="high" width="900" height="675">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="bundle" class="bundle-showcase">
+            <div class="container">
+                <div class="bundle-grid">
+                    <div class="bundle-image-wrapper">
+                        <div class="bundle-image">
+                            <img src="images/bundle.jpeg" alt="Best Seller Bundle - Scrub Daddy and Scrub Mommy combo" loading="lazy" decoding="async" width="900" height="675">
+                        </div>
+                    </div>
+                    <div class="bundle-content">
+                        <span class="bundle-badge">⭐ Best Seller Bundle</span>
+                        <h2 class="bundle-title">The Perfect Cleaning Combo</h2>
+                        <p class="bundle-subtitle">The perfect cleaning combo for every home.</p>
+                        <div class="bundle-includes">
+                            <p><strong>This bundle includes:</strong></p>
+                            <ul class="bundle-list">
+                                <li>✓ Scrub Daddy (Temperature-adaptive sponge)</li>
+                                <li>✓ Scrub Mommy (Dual-sided scrubber)</li>
+                                <li>✓ Free cleaning cloth bonus</li>
+                            </ul>
+                        </div>
+                        <div class="bundle-pricing">
+                            <span class="bundle-price-label">Bundle Price</span>
+                            <p class="bundle-price">700 EGP</p>
+                            <span class="bundle-save">Save 50 EGP</span>
+                        </div>
+                        <button class="btn btn-primary btn-large bundle-btn" id="addBundleToCart">Add Bundle To Cart</button>
+                        <p class="bundle-note">✨ Free shipping on orders over 500 EGP</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="products" class="products">
+            <div class="container">
+                <h2 class="section-title">Featured Products</h2>
+                <div class="products-grid">
+                    <article class="product-card" data-product='{"id":1,"name":"Scrub Daddy","price":400,"image":"images/scrub-daddy-1.jpg","description":"Temperature changing sponge for every cleaning task.","longDescription":"Scrub Daddy is firm in cold water and soft in warm water, making it perfect for dishes, counters, appliances, and delicate surfaces."}'>
+                        <div class="product-image">
+                            <img src="images/scrub-daddy-1.jpg" alt="Scrub Daddy" loading="lazy" decoding="async" width="600" height="400">
+                        </div>
+                        <div class="product-info">
+                            <h3>Scrub Daddy</h3>
+                            <p class="price">400 EGP</p>
+                            <p>Temperature-changing sponge that stays odor-free.</p>
+                            <div class="product-actions">
+                                <button class="btn btn-secondary view-details">View Details</button>
+                                <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product-card" data-product='{"id":2,"name":"Scrub Mommy","price":350,"image":"images/scrub-mommy-2.jpg","description":"Dual-sided scrubber for tough messes and gentle finishes.","longDescription":"Scrub Mommy has a soft sponge side and a textured scrub side for fast cleanup on kitchen surfaces, cookware, and more."}'>
+                        <div class="product-image">
+                            <img src="images/scrub-mommy-2.jpg" alt="Scrub Mommy" loading="lazy" decoding="async" width="600" height="400">
+                        </div>
+                        <div class="product-info">
+                            <h3>Scrub Mommy</h3>
+                            <p class="price">350 EGP</p>
+                            <p>Dual-sided cleaning for every surface.</p>
+                            <div class="product-actions">
+                                <button class="btn btn-secondary view-details">View Details</button>
+                                <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="features">
+            <div class="container">
+                <h2 class="section-title">Why Choose Scrub Daddy</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🌡️</div>
+                        <h3>Temperature Sensitive</h3>
+                        <p>Firm in cold water for tough scrubbing, soft in warm water for gentle cleaning.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🛡️</div>
+                        <h3>Scratch Free</h3>
+                        <p>Safe on delicate surfaces such as glass, non-stick cookware, and stainless steel.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🌿</div>
+                        <h3>Odor Resistant</h3>
+                        <p>Rinse and air dry to keep your sponge fresh and reusable for longer.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">⚡</div>
+                        <h3>Fast Cleaning</h3>
+                        <p>Designed to remove grime quickly and make your home shine in minutes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="checkout" class="checkout">
+            <div class="container checkout-grid">
+                <div>
+                    <h2 class="section-title">Complete Your Order</h2>
+                    <p>Fill out the form below and place your order securely. We’ll take care of the rest.</p>
+                </div>
+                <form class="checkout-form" id="checkoutForm">
+                    <div class="form-group">
+                        <label for="fullName">Full Name</label>
+                        <input id="fullName" type="text" placeholder="Your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input id="email" type="email" placeholder="you@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Address</label>
+                        <textarea id="address" rows="3" placeholder="Street, city, postal code" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="paymentMethod">Payment Method</label>
+                        <select id="paymentMethod" required>
+                            <option value="">Select payment method</option>
+                            <option value="cod">Cash on Delivery</option>
+                            <option value="visa">Visa</option>
+                            <option value="mastercard">MasterCard</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-large">Place Order</button>
+                </form>
+            </div>
+        </section>
+
+        <div class="modal" id="productModal" role="dialog" aria-modal="true" aria-hidden="true" tabindex="-1">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 id="modalTitle">Product</h3>
+                    <button class="modal-close" id="modalClose" aria-label="Close modal">×</button>
+                </div>
+                <div class="modal-body">
+                    <picture>
+                        <source type="image/avif" data-srcset="">
+                        <source type="image/webp" data-srcset="">
+                        <img id="modalImage" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="" alt="Product image" loading="lazy" decoding="async" width="640" height="480">
+                    </picture>
+                    <div class="modal-details">
+                        <p id="modalPrice" class="modal-price"></p>
+                        <p id="modalDescription"></p>
+                        <button class="btn btn-primary add-to-cart-modal" id="addToCartModal">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <h3>Scrub Daddy</h3>
+                <p>Cleaning made smarter with responsive, odor-resistant tools.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#products">Products</a>
+                <a href="#features">Features</a>
+                <a href="#checkout">Checkout</a>
+            </div>
+        </div>
+        <p class="footer-copy">&copy; 2026 Scrub Daddy. All rights reserved.</p>
+    </footer>
+
+    <div id="toastContainer" class="toast-container" aria-live="polite" aria-atomic="true"></div>
+
+    <script defer src="script.js"></script>
+</body>
+</html>
